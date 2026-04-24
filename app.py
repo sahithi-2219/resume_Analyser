@@ -55,7 +55,7 @@ if uploaded_file:
         st.write(", ".join(resume_skills))
 
         # ---------------- LOAD DATA ----------------
-        df = pd.read_csv("Job_Description_Results_Total.csv")
+        df = pd.read_csv("small_jobs.csv")
         df['cleaned'] = df['Job Description'].apply(clean_text)
 
         # ---------------- ML MATCHING ----------------
